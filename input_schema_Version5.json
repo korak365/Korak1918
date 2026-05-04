@@ -1,0 +1,63 @@
+{
+    "title": "Input schema of the Stock Status Monitor for Luxury Goods Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "Luxury retailer URLs to monitor for inventory updates.",
+            "editor": "requestListSources",
+            "prefill": [
+                {
+                    "url": "https://www.hermes.com/us/en/search/?q=handbags"
+                },
+                {
+                    "url": "https://www.rolex.com/en-us/watches"
+                }
+            ]
+        },
+        "maxRequestsPerCrawl": {
+            "title": "Max Requests per Crawl",
+            "type": "integer",
+            "description": "Maximum number of products to monitor.",
+            "default": 150
+        },
+        "monitoredBrands": {
+            "title": "Monitored Brands",
+            "type": "array",
+            "description": "Luxury brands to monitor (e.g., Hermès, Rolex, Louis Vuitton).",
+            "prefill": ["Hermès", "Rolex", "Louis Vuitton"]
+        },
+        "monitoredProducts": {
+            "title": "Monitored Product Categories",
+            "type": "array",
+            "description": "Product categories to focus on (e.g., Handbags, Watches, Jewelry).",
+            "prefill": ["Handbags", "Watches", "Jewelry", "Accessories"]
+        },
+        "stockAlertThreshold": {
+            "title": "Stock Alert Threshold",
+            "type": "integer",
+            "description": "Alert when stock falls below this number of items.",
+            "default": 5
+        },
+        "priceRange": {
+            "title": "Price Range (Min - Max)",
+            "type": "array",
+            "description": "Filter products by price range in USD.",
+            "prefill": [1000, 50000]
+        },
+        "enableNotifications": {
+            "title": "Enable Notifications",
+            "type": "boolean",
+            "description": "Send alerts when stock changes are detected.",
+            "default": true
+        },
+        "notificationEmail": {
+            "title": "Notification Email",
+            "type": "string",
+            "description": "Email address to receive stock alerts.",
+            "default": "alerts@example.com"
+        }
+    }
+}

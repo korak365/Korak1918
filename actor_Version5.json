@@ -1,0 +1,17 @@
+{
+    "actorSpecification": 1,
+    "name": "luxury-goods-stock-monitor-scraper",
+    "title": "Stock Status Monitor for Luxury Goods Scraper",
+    "description": "Alerts for Hermès/Rolex inventory updates.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "ai-generated-actor",
+        "generatedBy": "Claude"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "../Dockerfile"
+}

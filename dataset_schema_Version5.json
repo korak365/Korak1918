@@ -1,0 +1,174 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": ["productName", "brand", "category", "price", "stockStatus", "availability", "lastUpdated"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "productName": {
+                        "label": "Product Name",
+                        "format": "text"
+                    },
+                    "brand": {
+                        "label": "Brand",
+                        "format": "text"
+                    },
+                    "category": {
+                        "label": "Category",
+                        "format": "text"
+                    },
+                    "price": {
+                        "label": "Price",
+                        "format": "text"
+                    },
+                    "stockStatus": {
+                        "label": "Stock Status",
+                        "format": "text"
+                    },
+                    "availability": {
+                        "label": "Availability",
+                        "format": "text"
+                    },
+                    "lastUpdated": {
+                        "label": "Last Updated",
+                        "format": "date"
+                    }
+                }
+            }
+        },
+        "stockAlerts": {
+            "title": "Stock Alerts",
+            "transformation": {
+                "fields": ["productName", "brand", "previousStock", "currentStock", "stockChange", "alertType", "productUrl", "timestamp"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "productName": {
+                        "label": "Product Name",
+                        "format": "text"
+                    },
+                    "brand": {
+                        "label": "Brand",
+                        "format": "text"
+                    },
+                    "previousStock": {
+                        "label": "Previous Stock",
+                        "format": "number"
+                    },
+                    "currentStock": {
+                        "label": "Current Stock",
+                        "format": "number"
+                    },
+                    "stockChange": {
+                        "label": "Stock Change",
+                        "format": "number"
+                    },
+                    "alertType": {
+                        "label": "Alert Type",
+                        "format": "text"
+                    },
+                    "productUrl": {
+                        "label": "Product URL",
+                        "format": "link"
+                    },
+                    "timestamp": {
+                        "label": "Timestamp",
+                        "format": "date"
+                    }
+                }
+            }
+        },
+        "inventoryStatus": {
+            "title": "Inventory Status",
+            "transformation": {
+                "fields": ["productName", "brand", "stockQuantity", "restockDate", "color", "size", "availability", "condition"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "productName": {
+                        "label": "Product Name",
+                        "format": "text"
+                    },
+                    "brand": {
+                        "label": "Brand",
+                        "format": "text"
+                    },
+                    "stockQuantity": {
+                        "label": "Stock Quantity",
+                        "format": "number"
+                    },
+                    "restockDate": {
+                        "label": "Restock Date",
+                        "format": "date"
+                    },
+                    "color": {
+                        "label": "Color",
+                        "format": "text"
+                    },
+                    "size": {
+                        "label": "Size",
+                        "format": "text"
+                    },
+                    "availability": {
+                        "label": "Availability",
+                        "format": "text"
+                    },
+                    "condition": {
+                        "label": "Condition",
+                        "format": "text"
+                    }
+                }
+            }
+        },
+        "priceTracking": {
+            "title": "Price Tracking",
+            "transformation": {
+                "fields": ["productName", "brand", "currentPrice", "previousPrice", "priceChange", "currency", "productUrl", "timestamp"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "productName": {
+                        "label": "Product Name",
+                        "format": "text"
+                    },
+                    "brand": {
+                        "label": "Brand",
+                        "format": "text"
+                    },
+                    "currentPrice": {
+                        "label": "Current Price",
+                        "format": "text"
+                    },
+                    "previousPrice": {
+                        "label": "Previous Price",
+                        "format": "text"
+                    },
+                    "priceChange": {
+                        "label": "Price Change %",
+                        "format": "number"
+                    },
+                    "currency": {
+                        "label": "Currency",
+                        "format": "text"
+                    },
+                    "productUrl": {
+                        "label": "Product URL",
+                        "format": "link"
+                    },
+                    "timestamp": {
+                        "label": "Timestamp",
+                        "format": "date"
+                    }
+                }
+            }
+        }
+    }
+}

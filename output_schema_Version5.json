@@ -1,0 +1,26 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of the Stock Status Monitor for Luxury Goods Scraper",
+    "properties": {
+        "overview": {
+            "type": "string",
+            "title": "Overview",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        },
+        "stockAlerts": {
+            "type": "string",
+            "title": "Stock Alerts",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=stockAlerts"
+        },
+        "inventoryStatus": {
+            "type": "string",
+            "title": "Inventory Status",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=inventoryStatus"
+        },
+        "priceTracking": {
+            "type": "string",
+            "title": "Price Tracking",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=priceTracking"
+        }
+    }
+}
